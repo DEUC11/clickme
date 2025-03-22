@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Image on Button Click</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #imageContainer {
+      display: none;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Button to See the Image</h1>
+  
+  <button onclick="showImage()">Show Image</button>
+  
+  <div id="imageContainer">
+    <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+  </div>
+
+  <script>
+    function showImage() {
+      var imageContainer = document.getElementById("imageContainer");
+      imageContainer.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
